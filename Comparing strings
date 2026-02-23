@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compare Two Strings</title>
+</head>
+<body>
+
+    <h2>String Comparison Program</h2>
+
+    <label>First String: </label>
+    <input type="text" id="str1"><br><br>
+
+    <label>Second String: </label>
+    <input type="text" id="str2"><br><br>
+
+    <button onclick="compareStrings()">Compare the two strings</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function compareStrings() {
+            let string1 = document.getElementById("str1").value;
+            let string2 = document.getElementById("str2").value;
+
+            if (string1 === string2) {
+                document.getElementById("result").innerHTML = "Both strings are equal";
+            } else {
+                document.getElementById("result").innerHTML = "Strings are NOT equal";
+            }
+        }
+    </script>
+
+</body>
+</html>
